@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  min-width: 220px;
+  margin: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+input, button {
+  font-size: 14px;
+}

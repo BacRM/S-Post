@@ -1,0 +1,40 @@
+<!-- src/content/chat.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="no-referrer" />
+    <title>PerfectPost Chat</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        background: #e0ebee;
+      }
+      #root {
+        height: 100%;
+        display: grid;
+        place-items: stretch;
+      }
+      openai-chatkit {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <iframe
+        id="saas-chat-iframe"
+        allow="clipboard-read; clipboard-write; fullscreen; web-share"
+        referrerpolicy="no-referrer"
+        style="width: 100%; height: 100%; border: 0; display: block;">
+      </iframe>
+    </div>
+
+    <!-- Script proxy pour charger l'iframe SAAS et gérer la communication -->
+    <script type="module" src="chat-proxy.js"></script>
+  </body>
+</html>

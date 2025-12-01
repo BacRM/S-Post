@@ -1,0 +1,70 @@
+{
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "25.11.20",
+  "short_name": "PerfectPost",
+  "homepage_url": "https://perfectpost.social",
+  "manifest_version": 3,
+  "default_locale": "en",
+  "icons": {
+    "16": "images/pp_icon16.png",
+    "32": "images/pp_icon32.png",
+    "48": "images/pp_icon48.png",
+    "128": "images/pp_icon128.png",
+    "256": "images/pp_icon256.png",
+    "512": "images/pp_icon512.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.linkedin.com/*"
+      ],
+      "js": [
+        "linkedin.js"
+      ],
+      "css": [
+        "linkedin.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://*.perfectpost.fr/*"
+      ],
+      "run_at": "document_start",
+      "js": [
+        "perfectpost.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "alarms",
+    "storage",
+    "tabs",
+    "webRequest"
+  ],
+  "optional_permissions": [
+    "notifications"
+  ],
+  "host_permissions": [
+    "*://*.linkedin.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PerfectPost"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "chat.html",
+        "chat-proxy.js"
+      ],
+      "matches": [
+        "*://*.linkedin.com/*"
+      ]
+    }
+  ],
+  "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+}
