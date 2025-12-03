@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S-Post</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="pp-header">
+      <div class="pp-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#0077b5">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+        </svg>
+        <span class="pp-title">S-Post</span>
+      </div>
+      <span class="pp-version" id="version"></span>
+    </header>
+
+    <!-- Status LinkedIn -->
+    <section class="pp-section">
+      <h2 class="pp-section-title">🔗 Connexion LinkedIn</h2>
+      
+      <div class="pp-status-row">
+        <span class="pp-label">Statut :</span>
+        <span class="pp-value" id="linkedin-status">Vérification...</span>
+      </div>
+      
+      <div id="profile-info" class="pp-profile-info" style="display: none;">
+        <div class="pp-status-row">
+          <span class="pp-label">Profil :</span>
+          <span class="pp-value" id="profile-name"></span>
+        </div>
+        <div class="pp-status-row">
+          <span class="pp-label">Dernière sync :</span>
+          <span class="pp-value" id="last-sync">-</span>
+        </div>
+      </div>
+      
+      <div id="not-connected-message" class="pp-warning" style="display: none;">
+        <p>⚠️ Ouvrez LinkedIn pour connecter l'extension</p>
+        <a href="https://www.linkedin.com/feed" target="_blank" class="pp-button pp-button-primary" style="margin-top: 8px;">
+          Ouvrir LinkedIn
+        </a>
+      </div>
+    </section>
+
+    <!-- Actions -->
+    <section id="actions-section" class="pp-section">
+      <h2 class="pp-section-title">🚀 Actions</h2>
+      
+      <button id="open-backoffice-btn" class="pp-button pp-button-primary pp-button-large">
+        📊 Ouvrir S-PostBO
+      </button>
+      
+      <button id="sync-btn" class="pp-button pp-button-secondary">
+        🔄 Synchroniser les données
+      </button>
+    </section>
+
+    <!-- Données extraites -->
+    <section id="data-section" class="pp-section" style="display: none;">
+      <h2 class="pp-section-title">📋 Données LinkedIn</h2>
+      
+      <div class="pp-data-preview">
+        <div class="pp-data-item">
+          <span class="pp-data-label">CSRF Token :</span>
+          <span class="pp-data-value" id="csrf-preview">-</span>
+        </div>
+        <div class="pp-data-item">
+          <span class="pp-data-label">User ID :</span>
+          <span class="pp-data-value" id="user-id-preview">-</span>
+        </div>
+      </div>
+      
+      <button id="copy-data-btn" class="pp-button pp-button-secondary pp-button-small">
+        📋 Copier les données
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pp-footer">
+      <div class="pp-footer-version">
+        <span id="version-footer">S-Post v1.1.0</span>
+      </div>
+      <small>Backoffice : <a href="http://localhost:5174" target="_blank" id="backoffice-link">S-PostBO</a></small>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

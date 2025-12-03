@@ -1,0 +1,258 @@
+/* ===========================================
+   LinkedIn Post Planner - Popup Styles
+   =========================================== */
+
+:root {
+  --linkedin-blue: #0077b5;
+  --linkedin-blue-dark: #005885;
+  --linkedin-blue-light: #00a0dc;
+  --success: #28a745;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --background: #f3f6f8;
+  --surface: #ffffff;
+  --text: #000000e6;
+  --text-secondary: #00000099;
+  --border: #e0e0e0;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--background);
+  min-width: 320px;
+  max-width: 400px;
+}
+
+#app {
+  padding: 16px;
+}
+
+/* Header */
+.pp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--linkedin-blue);
+}
+
+.pp-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pp-logo svg {
+  width: 28px;
+  height: 28px;
+}
+
+.pp-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--linkedin-blue);
+}
+
+.pp-version {
+  font-size: 11px;
+  color: var(--text-secondary);
+  background: var(--border);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Sections */
+.pp-section {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow);
+}
+
+.pp-section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Status rows */
+.pp-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.pp-label {
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.pp-value {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.pp-value.connected {
+  color: var(--success);
+}
+
+.pp-value.disconnected {
+  color: var(--danger);
+}
+
+/* Profile info */
+.pp-profile-info {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+/* Warning message */
+.pp-warning {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: var(--radius);
+  padding: 12px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Data preview */
+.pp-data-preview {
+  background: var(--background);
+  border-radius: var(--radius);
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.pp-data-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 12px;
+}
+
+.pp-data-label {
+  color: var(--text-secondary);
+}
+
+.pp-data-value {
+  font-family: monospace;
+  color: var(--text);
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Buttons */
+.pp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.pp-button:last-child {
+  margin-bottom: 0;
+}
+
+.pp-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pp-button-primary {
+  background: linear-gradient(135deg, var(--linkedin-blue) 0%, var(--linkedin-blue-light) 100%);
+  color: white;
+}
+
+.pp-button-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--linkedin-blue-dark) 0%, var(--linkedin-blue) 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
+}
+
+.pp-button-secondary {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.pp-button-secondary:hover:not(:disabled) {
+  background: var(--background);
+  border-color: var(--linkedin-blue);
+}
+
+.pp-button-large {
+  padding: 14px 20px;
+  font-size: 15px;
+}
+
+.pp-button-small {
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+/* Footer */
+.pp-footer {
+  text-align: center;
+  padding: 12px;
+  color: var(--text-secondary);
+  font-size: 11px;
+  border-top: 1px solid var(--border);
+  margin-top: 8px;
+}
+
+.pp-footer-version {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--linkedin-blue);
+}
+
+.pp-footer a {
+  color: var(--linkedin-blue);
+  text-decoration: none;
+}
+
+.pp-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.loading {
+  animation: pulse 1.5s infinite;
+}

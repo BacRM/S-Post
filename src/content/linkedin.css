@@ -1,0 +1,426 @@
+/**
+ * PerfectPost - LinkedIn Content Script Styles
+ * Styles injectés sur les pages LinkedIn
+ */
+
+/* ===========================================
+   Variables CSS
+   =========================================== */
+body {
+  --pp-text-color: var(--color-text, rgba(0, 0, 0, 0.9));
+  --pp-color-background-container: var(--color-background-container, #fff);
+  --pp-color-background-container-tint: var(--color-background-container-tint, #f9fafb);
+  --pp-color-background-container-tint-2: var(--cool-gray-20, #eef3f8);
+  --pp-slide-background-color: #e0ebee;
+  --pp-main-color: #53757d;
+  --pp-main-color-active: #018093;
+  --pp-main-color-active-half: rgba(1, 128, 147, 0.5);
+  --pp-text-color-error: #f00;
+  --pp-radius: 8px;
+  --pp-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode */
+.theme--dark body {
+  --pp-text-color: var(--color-text, hsla(0deg 0% 100% / 90%));
+  --pp-color-background-container: var(--color-background-container, #1d2226);
+  --pp-color-background-container-tint: var(--color-background-container-tint, #293128);
+  --pp-color-background-container-tint-2: var(--cool-gray-80, #38434f);
+  --pp-slide-background-color: #53757d;
+  --pp-main-color: #e0ebee;
+}
+
+/* ===========================================
+   Bouton "Voir moins"
+   =========================================== */
+.pp-see-less-btn {
+  color: var(--color-action, #0a66c2);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0;
+  margin-top: 8px;
+  display: block;
+}
+
+.pp-see-less-btn:hover {
+  text-decoration: underline;
+}
+
+/* ===========================================
+   Bouton d'ajout à la liste
+   =========================================== */
+.pp-list-button {
+  margin-left: 8px;
+}
+
+/* ===========================================
+   Modal de sélection de liste
+   =========================================== */
+.pp-modal {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pp-modal-content {
+  background-color: var(--pp-slide-background-color);
+  margin: 10% auto;
+  padding-bottom: 10px;
+  border: 1px solid var(--pp-color-background-container-tint-2);
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: var(--pp-shadow);
+}
+
+.pp-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: var(--pp-color-background-container);
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid var(--pp-color-background-container-tint-2);
+}
+
+.pp-modal-title-text {
+  font-weight: 600;
+  color: var(--pp-text-color);
+}
+
+.pp-modal-header .close {
+  color: var(--pp-text-color);
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.pp-modal-header .close:hover {
+  color: var(--pp-main-color-active);
+}
+
+.pp-modal-body {
+  padding: 16px;
+}
+
+.pp-modal-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.pp-modal-list-element {
+  background-color: var(--pp-color-background-container);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 12px 16px;
+  border-radius: var(--pp-radius);
+  transition: background-color 0.2s;
+}
+
+.pp-modal-list-element:hover {
+  background-color: var(--pp-color-background-container-tint);
+}
+
+.pp-modal-list-element-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pp-modal-list-element-name {
+  font-weight: 600;
+  color: var(--pp-text-color);
+}
+
+.pp-modal-list-element-subtext {
+  font-size: 12px;
+  color: var(--pp-text-color);
+  opacity: 0.7;
+}
+
+/* ===========================================
+   Notifications
+   =========================================== */
+.pp-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  border-radius: var(--pp-radius);
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 10001;
+  box-shadow: var(--pp-shadow);
+}
+
+.pp-notification--success {
+  background: #28a745;
+  color: white;
+}
+
+.pp-notification--error {
+  background: #dc3545;
+  color: white;
+}
+
+.pp-notification--warning {
+  background: #ffc107;
+  color: #212529;
+}
+
+/* ===========================================
+   Card PerfectPost sur les profils
+   =========================================== */
+.pp-profile-card {
+  background-color: var(--pp-color-background-container);
+  border-radius: var(--pp-radius);
+  padding: 16px;
+  margin-top: 8px;
+  box-shadow: 0 0 0 1px rgba(140, 140, 140, 0.2);
+}
+
+.pp-profile-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.pp-profile-card-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.pp-profile-card-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--pp-main-color);
+}
+
+.pp-profile-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pp-profile-card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pp-profile-card-button--primary {
+  background: var(--pp-main-color-active);
+  color: white;
+}
+
+.pp-profile-card-button--primary:hover {
+  background: #016d7d;
+}
+
+.pp-profile-card-button--secondary {
+  background: transparent;
+  color: var(--pp-main-color-active);
+  border: 1px solid var(--pp-main-color-active);
+}
+
+.pp-profile-card-button--secondary:hover {
+  background: var(--pp-main-color-active);
+  color: white;
+}
+
+/* ===========================================
+   Panneau latéral (Assistant d'écriture)
+   =========================================== */
+.pp-panel-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--pp-color-background-container);
+  border-radius: var(--pp-radius);
+  position: fixed;
+  width: 280px;
+  max-height: 80vh;
+  z-index: 9999;
+  box-shadow: var(--pp-shadow);
+  overflow: hidden;
+}
+
+.pp-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: var(--pp-slide-background-color);
+  border-bottom: 1px solid var(--pp-color-background-container-tint-2);
+}
+
+.pp-panel-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--pp-main-color);
+}
+
+.pp-panel-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--pp-text-color);
+}
+
+.pp-panel-content {
+  padding: 16px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* ===========================================
+   Animations
+   =========================================== */
+@keyframes pp-slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pp-slide-out-right {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes pp-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pp-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.pp-animate-slide-in {
+  animation: pp-slide-in-right 0.3s ease forwards;
+}
+
+.pp-animate-slide-out {
+  animation: pp-slide-out-right 0.3s ease forwards;
+}
+
+.pp-animate-fade-in {
+  animation: pp-fade-in 0.2s ease forwards;
+}
+
+.pp-animate-fade-out {
+  animation: pp-fade-out 0.2s ease forwards;
+}
+
+/* ===========================================
+   Spinner de chargement
+   =========================================== */
+.pp-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--pp-color-background-container-tint);
+  border-top-color: var(--pp-main-color-active);
+  border-radius: 50%;
+  animation: pp-spin 0.8s linear infinite;
+}
+
+@keyframes pp-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===========================================
+   Utilitaires
+   =========================================== */
+.pp-hidden {
+  display: none !important;
+}
+
+.pp-flex {
+  display: flex;
+}
+
+.pp-flex-col {
+  flex-direction: column;
+}
+
+.pp-items-center {
+  align-items: center;
+}
+
+.pp-justify-center {
+  justify-content: center;
+}
+
+.pp-gap-8 {
+  gap: 8px;
+}
+
+.pp-gap-16 {
+  gap: 16px;
+}
+
+.pp-mt-8 {
+  margin-top: 8px;
+}
+
+.pp-mb-8 {
+  margin-bottom: 8px;
+}
+
+.pp-p-8 {
+  padding: 8px;
+}
+
+.pp-p-16 {
+  padding: 16px;
+}
+

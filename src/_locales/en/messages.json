@@ -1,0 +1,1095 @@
+{
+  "date_today": {
+    "message": "today",
+    "description": ""
+  },
+  "date_tomorrow": {
+    "message": "tomorrow",
+    "description": ""
+  },
+  "date_daymonth": {
+    "message": "MM/dd",
+    "description": ""
+  },
+  "extensionName": {
+    "message": "S-Post - LinkedIn Manager",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Extracts LinkedIn data and sends it to S-Post Back Office",
+    "description": "Description of the extension."
+  },
+
+  "noAuthenticated": {
+    "message": "You are not connected to your PerfectPost account. Please log in to use the extension.",
+    "description": ""
+  },
+
+  "feed_seeless": {
+    "message": "...see less",
+    "description": ""
+  },
+
+  "listtitle": {
+    "message": "Your custom feeds",
+    "description": ""
+  },
+
+  "list_createaccount": {
+    "message": "Tired of your LinkedIn feed? Create a PerfectPost account to manage multiple lists and see only the contacts that interest you.",
+    "description": ""
+  },
+
+  "listshortcut_nonelistcreated": {
+    "message": "Tired of your LinkedIn feed? Store your favorite contacts here to never miss their updates.",
+    "description": ""
+  },
+
+  "listeselectmodal_title": {
+    "message": "Select a list",
+    "description": ""
+  },
+
+  "profileprocessor_addtolist": {
+    "message": "Add to my list",
+    "description": ""
+  },
+
+  "listecreateform_nameplaceholder": {
+    "message": "List name",
+    "description": ""
+  },
+
+  "managelistmodal_title": {
+    "message": "Manage my lists",
+    "description": ""
+  },
+
+  "managelistdescription": {
+    "message": "To add a person to the list, visit their profile and click on \"Add to my list\" or use the search function below.",
+    "description": ""
+  },
+
+  "managelistsearch": {
+    "message": "Search for a member or page on LinkedIn",
+    "description": ""
+  },
+
+  "managelistmaxmember": {
+    "message": "You have reached the limit of people / organizations in this list.",
+    "description": ""
+  },
+
+  "listshortcut_createcontactlist": {
+    "message": "+ create a contact list",
+    "description": ""
+  },
+
+  "managelist_reachedratelimite": {
+    "message": "You have reached the limit of 1 list for free accounts",
+    "description": ""
+  },
+
+  "listselectempty": {
+    "message": "Your lists are empty.",
+    "description": ""
+  },
+
+  "listeselectempty_description": {
+    "message": "You'll need to create a List before adding anyone.",
+    "description": ""
+  },
+
+  "listselectempty_createlist": {
+    "message": "Create a list",
+    "description": ""
+  },
+
+  "listselectempty_renamelist": {
+    "message": "Rename a list",
+    "description": ""
+  },
+
+  "listselect_memberscount": {
+    "message": "$COUNT$ members",
+    "description": "",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+
+  "tipsaction_noaccount": {
+    "message": "Find daily tips to improve your LinkedIn experience by creating a PerfectPost account.",
+    "description": ""
+  },
+
+  "tipsaction_account_mismatch": {
+    "message": "Your PerfectPost account is associated with another LinkedIn account.",
+    "description": ""
+  },
+
+  "hashtagobserver_followers": {
+    "message": "$COUNT$ followers",
+    "description": "",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+
+  "statistics_characters": {
+    "message": "characters",
+    "description": ""
+  },
+
+  "statistics_words": {
+    "message": "words",
+    "description": ""
+  },
+
+  "accrochepreviewoverlay_usebutton": {
+    "message": "Use in my post",
+    "description": ""
+  },
+
+  "accrocheview_maintitle": {
+    "message": "Hooks",
+    "description": ""
+  },
+
+  "accrocheview_title": {
+    "message": "The hook is the first part of your text, the one that must catch the reader's attention. It must be two lines maximum and make you want to read more, even to a person who does not know you and who discovers you. For that here are some structures that have proven themselves.",
+    "description": ""
+  },
+
+  "accrocheview_error": {
+    "message": "An error occurred while loading the hooks. Please try again later.",
+    "description": ""
+  },
+
+  "accrocheview_readmore": {
+    "message": "read more",
+    "description": ""
+  },
+
+  "accrocheview_seemore": {
+    "message": "See more",
+    "description": ""
+  },
+
+  "assistantview_title": {
+    "message": "Writing assistant",
+    "description": ""
+  },
+
+  "assistantview_needinspiration": {
+    "message": "I need inspiration",
+    "description": ""
+  },
+
+  "assistantview_writecomment": {
+    "message": "Write a comment",
+    "description": ""
+  },
+
+  "assistantview_chatkit": {
+    "message": "AI Assistant",
+    "description": ""
+  },
+
+  "assistantview_trial_info": {
+    "message": "You are in a free trial period until $DATE$. Enjoy all the premium features!",
+    "description": "",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 janvier 2024"
+      }
+    }
+  },
+
+  "linkedin_token_invalid_message": {
+    "message": "The connection between LinkedIn and PerfectPost has expired. Please reconnect your account to continue using PerfectPost.",
+    "description": "Message affiché lorsque les tokens LinkedIn sont invalides."
+  },
+
+  "linkedin_token_invalid_link": {
+    "message": "Regenerate my tokens",
+    "description": "Texte du lien qui redirige vers les paramètres pour régénérer les tokens."
+  },
+
+  "assistantview_perfectpostadvice": {
+    "message": "PerfectPost's advice:",
+    "description": ""
+  },
+
+  "pptab_title": {
+    "message": "This tab is managed by PerfectPost, please do not touch it.",
+    "description": ""
+  },
+
+  "removemodal_couldsavepublication": {
+    "message": "Think about connecting with PerfectPost and your next publications will be automatically saved.",
+    "description": ""
+  },
+
+  "removemodal_alreadysavespublication": {
+    "message": "Do not panic ! The content of your publication has already been automatically saved on PerfectPost",
+    "description": ""
+  },
+
+  "removemodal_close": {
+    "message": "Close",
+    "description": ""
+  },
+
+  "loginview_maintitle": {
+    "message": "Login",
+    "description": ""
+  },
+
+  "loginview_message": {
+    "message": "You must use your PerfectPost credentials to log in.",
+    "description": ""
+  },
+
+  "loginview_emailplaceholder": {
+    "message": "Email",
+    "description": ""
+  },
+
+  "loginview_passwordplaceholder": {
+    "message": "Password",
+    "description": ""
+  },
+
+  "loginview_loginbutton": {
+    "message": "Login",
+    "description": ""
+  },
+
+  "loginview_forgotpassword": {
+    "message": "Forgot password ?",
+    "description": ""
+  },
+
+  "loginview_signup": {
+    "message": "Sign Up",
+    "description": ""
+  },
+
+  "changepasswordview_message": {
+    "message": "You are connected with a temporary password, please choose your final password.",
+    "description": ""
+  },
+
+  "changepasswordview_passwordplaceholder": {
+    "message": "New password",
+    "description": ""
+  },
+
+  "changepasswordview_loginbutton": {
+    "message": "Change password",
+    "description": ""
+  },
+
+  "changepasswordview_passwordchecklength": {
+    "message": "length 8",
+    "description": ""
+  },
+
+  "changepasswordview_passwordcheckuppercase": {
+    "message": "uppercase letters",
+    "description": ""
+  },
+
+  "changepasswordview_passwordchecklowercase": {
+    "message": "lowercase letters",
+    "description": ""
+  },
+
+  "changepasswordview_passwordcheckspecial": {
+    "message": "special characters",
+    "description": ""
+  },
+
+  "changepasswordview_passwordchecknumber": {
+    "message": "numbers",
+    "description": ""
+  },
+
+  "changepasswordview_passwordsame": {
+    "message": "same password",
+    "description": ""
+  },
+
+  "activityaction_title": {
+    "message": "Goals of the day",
+    "description": ""
+  },
+
+  "activityaction_loading": {
+    "message": "Loading...",
+    "description": ""
+  },
+
+  "activityaction_createaccount": {
+    "message": "Create an account to save your goals",
+    "description": ""
+  },
+
+  "activityaction_legendcomment": {
+    "message": " $COUNT$/$MAX$ comments",
+    "description": "",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      },
+      "max": {
+        "content": "$2",
+        "example": "0"
+      }
+    }
+  },
+
+  "activityaction_legendlike": {
+    "message": " $COUNT$/$MAX$ likes",
+    "description": "",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      },
+      "max": {
+        "content": "$2",
+        "example": "0"
+      }
+    }
+  },
+
+  "activityaction_sync": {
+    "message": "Resynchronize my stats",
+    "description": ""
+  },
+
+  "commentview_maintitle": {
+    "message": "Write a comment",
+    "description": ""
+  },
+
+  "commentview_publishbutton": {
+    "message": "Publish",
+    "description": ""
+  },
+
+  "commentview_addcomment_placeholder": {
+    "message": "Add a comment...",
+    "description": ""
+  },
+
+  "commentview_helpertext": {
+    "message": "This comment will be published right after your post.",
+    "description": ""
+  },
+
+  "commentview_needpremium": {
+    "message": "You need a premium account to post a comment.",
+    "description": ""
+  },
+
+  "commentview_removecomment": {
+    "message": "Delete comment",
+    "description": ""
+  },
+
+  "ctapreviewoverlay_usebutton": {
+    "message": "Use in my post",
+    "description": ""
+  },
+
+  "ctaview_maintitle": {
+    "message": "Call to Action",
+    "description": ""
+  },
+
+  "ctaview_readmore": {
+    "message": "read more",
+    "description": ""
+  },
+
+  "ctaview_seemore": {
+    "message": "See more",
+    "description": ""
+  },
+
+  "ctaview_description": {
+    "message": "Often, the post ends with a “call-to-action”: the reader is called upon to take an action (click, like, comment, subscribe, etc.). We have written ready-made endings to entice people to subscribe after they finish reading the post. Use them or save your own to save time!",
+    "description": ""
+  },
+
+  "ctaview_premium": {
+    "message": "<p><strong>Switch to PerfectPost premium to access dozens of hook ideas.</strong><br/>We add new ones every month.<br/>You never run out of inspiration again!</p>",
+    "description": ""
+  },
+
+  "chatkitview_title": {
+    "message": "AI Assistant",
+    "description": ""
+  },
+
+  "chatkitview_welcome": {
+    "message": "Welcome to your Writing Assistant!",
+    "description": ""
+  },
+
+  "chatkitview_improve": {
+    "message": "Improve my post",
+    "description": ""
+  },
+
+  "inspirationviewselector_title": {
+    "message": "I need inspiration",
+    "description": ""
+  },
+
+  "inspirationviewselector_hooks": {
+    "message": "Hooks",
+    "description": ""
+  },
+
+  "inspirationviewselector_ctas": {
+    "message": "Call-to-action",
+    "description": ""
+  },
+
+  "premiumoverlay_button": {
+    "message": "Discover PerfectPost premium",
+    "description": ""
+  },
+
+  "settingsview_maintitle": {
+    "message": "Settings",
+    "description": ""
+  },
+
+  "settingsview_manageaccount": {
+    "message": "Manage my account",
+    "description": ""
+  },
+
+  "settingsview_logout": {
+    "message": "Sign out",
+    "description": ""
+  },
+
+  "settingsview_removeaccount": {
+    "message": "Delete my account",
+    "description": ""
+  },
+
+  "draft_tag_draft": {
+    "message": "Draft",
+    "description": ""
+  },
+
+  "draft_tag_unpublished": {
+    "message": "Unpublished",
+    "description": ""
+  },
+
+  "draft_tag_scheduled": {
+    "message": "Scheduled",
+    "description": ""
+  },
+
+  "draft_tag_scheduled_at": {
+    "message": "Will be published on $date$ at $hour$",
+    "description": "",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": ""
+      },
+      "hour": {
+        "content": "$2",
+        "example": "0"
+      }
+    }
+  },
+
+  "draft_tag_overdue": {
+    "message": "Proofreading time exceeded",
+    "description": ""
+  },
+
+  "draft_tag_pendingReview": {
+    "message": "To review before $date$ at $hour$",
+    "description": "",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": ""
+      },
+      "hour": {
+        "content": "$2",
+        "example": "0"
+      }
+    }
+  },
+
+  "draft_tag_published": {
+    "message": "Published",
+    "description": ""
+  },
+
+  "draft_tag_pending": {
+    "message": "In writing",
+    "description": ""
+  },
+
+  "draft_create_draft": {
+    "message": "New draft",
+    "description": ""
+  },
+
+  "draft_menu_clone": {
+    "message": "Clone",
+    "description": ""
+  },
+
+  "draft_menu_remove": {
+    "message": "Delete",
+    "description": ""
+  },
+
+  "draftpreviewoverlay_usebutton": {
+    "message": "Use in my post",
+    "description": ""
+  },
+
+  "pendingdraftcard_saving": {
+    "message": "Saving... $PERCENT$",
+    "description": "",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+
+  "copywriting_adverb": {
+    "message": "It's okay to limit adverbs to cut to the chase 😉",
+    "description": ""
+  },
+
+  "copywriting_dear_network": {
+    "message": "Ah no no no. We don't say \"Dear network\" on Linkedin anymore, huh! We have to find a hook that makes you want to read more!",
+    "description": ""
+  },
+
+  "copywriting_default": {
+    "message": "I don't know what to tell you, but it seems suspicious.",
+    "description": ""
+  },
+
+  "copywriting_dots": {
+    "message": "The \"...\" make the text soft. In 90% of cases, it works better removing them 😉",
+    "description": ""
+  },
+
+  "copywriting_hashtag": {
+    "message": "Hashtags on Linkedin, it goes at the end, not in the text! Finally after you do as you want.",
+    "description": ""
+  },
+
+  "copywriting_hashtag_headline": {
+    "message": "No no, it's at the bottom of the hashtags. We always start with a teaser here!",
+    "description": ""
+  },
+
+  "copywriting_hello": {
+    "message": "We haven't started a message with Hello on social media since 1903. It's kind of like \"Dear network\".",
+    "description": ""
+  },
+
+  "copywriting_more_than_30_word": {
+    "message": "That's a very (too) long sentence: There's surely a way to shorten it 👌",
+    "description": ""
+  },
+
+  "copywriting_no_end_of_line_colon": {
+    "message": "Isn't it clearer if we skip a line after the colon?",
+    "description": ""
+  },
+
+  "copywriting_parenthesis": {
+    "message": "Are you sure we can't remove what's in parentheses?",
+    "description": ""
+  },
+
+  "copywriting_too_much_emoji": {
+    "message": "Hep hep hep, emoji font. Too many there. Do you have permission for that?",
+    "description": ""
+  },
+
+  "copywriting_too_much_line": {
+    "message": "Air it out with line breaks! 😉",
+    "description": ""
+  },
+
+  "copywriting_too_much_line_headline": {
+    "message": "Wow, this hook is dense. Can't we get it to breathe a little?",
+    "description": ""
+  },
+
+  "copywriting_url": {
+    "message": "Links are often towards the end 😉 (and without the preview)",
+    "description": ""
+  },
+
+  "copywriting_premium_hidden": {
+    "message": "We found <b>$COUNT$ additional writing issues</b><br>in this text available only for <a href=\"https://app.perfectpost.fr/settings/subscription?o=\" target=\"_blank\">Premium users.</a>",
+    "description": "",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+
+  "copywriting_premium_hidden_safari": {
+    "message": "We found <b>$COUNT$ additional writing issues</b><br>in this text available only for Premium users.",
+    "description": "",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "0"
+      }
+    }
+  },
+
+  "copywriting_premium_suggestions": {
+    "message": "Premium suggestions",
+    "description": ""
+  },
+
+  "sharemodalprocessor_scheduled_disabled": {
+    "message": "With linkedin you can't schedule this type of post but you can do it with PerfectPost ! ",
+    "description": ""
+  },
+
+  "sharemodalprocessor_scheduled_disabled_link": {
+    "message": "Subscribe to PerfectPost Premium",
+    "description": ""
+  },
+
+  "sharemodalprocessor_welcome_message": {
+    "message": "<p>Tadaaaaa ! ✨</p><p>Here is the new version of PerfectPost prepared with ❤️</p><p><br></p><p>All the features of the old version are there: </p><p>bold/italic, see more, drafts, scheduling etc.</p><p><br></p><p>And new ones are coming 🙂</p><p><br></p><p>We made a quick tutorial here: </p><p>https://www.perfectpost.fr/onboarding-en</p><p><br></p><p>We hope you'll like it! </p><p>Antoine and Jerome from PerfectPost</p><p><br></p><p>PS: To start </p><p>1️⃣ log in with your PerfectPost credentials 👉</p><p>2️⃣ edit this message to save it in your drafts</p>",
+    "description": ""
+  },
+
+  "sharemodalprocessor_show_scheduled_post": {
+    "message": "See scheduled posts",
+    "description": ""
+  },
+
+  "sharemodalprocessor_enable_tracking": {
+    "message": "Track the post",
+    "description": ""
+  },
+
+  "account_dashboard": {
+    "message": "Access my dashboard",
+    "description": ""
+  },
+
+  "account_login": {
+    "message": "Log in to my PerfectPost account",
+    "description": ""
+  },
+
+  "account_follow_perfectpost": {
+    "message": "Stay informed of PerfectPost news",
+    "description": ""
+  },
+
+  "network_accept_without_follow": {
+    "message": "Accept without follow",
+    "description": ""
+  },
+
+  "accountmismatchview_maintitle": {
+    "message": "Your PerfectPost account is associated with another LinkedIn account",
+    "description": ""
+  },
+
+  "accountmismatchview_editaccount": {
+    "message": "Edit my account",
+    "description": ""
+  },
+
+  "accountmismatchview_description": {
+    "message": "You are currently connected with the account <a target=\"_blank\" href=\"https://linkedin.com/in/$PROFILE1$\">$PROFILE1$</a>.<br/>However, your PerfectPost account is associated with the profile <a target=\"_blank\" href=\"https://linkedin.com/in/$PROFILE2$\">$PROFILE2$</a>.<br/>To avoid mixing data between the two accounts, we have disabled the extension for the moment.<br/><br/>To correct this association, you can do it in the settings of your PerfectPost account or you can connect to another PerfectPost account by clicking on the buttons below.",
+    "description": "",
+    "placeholders": {
+      "profile1": {
+        "content": "$1",
+        "example": "jeromeheissler"
+      },
+      "profile2": {
+        "content": "$2",
+        "example": "jeromeheissler"
+      }
+    }
+  },
+
+  "accountmismatchview_ppemail": {
+    "message": "You are connected to your PerfectPost account with the email: $EMAIL$",
+    "description": "",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": ""
+      }
+    }
+  },
+
+  "tipsaction_account_not_associated": {
+    "message": "Your PerfectPost account is not associated with your LinkedIn account.",
+    "description": ""
+  },
+
+  "accountnotassociatedview_description": {
+    "message": "To associate your PerfectPost account with your LinkedIn account, please log in to your PerfectPost account and click on the \"Associate my LinkedIn account\" button.",
+    "description": ""
+  },
+
+  "accountnotassociatedview_link": {
+    "message": "Ir a PerfectPost",
+    "description": ""
+  },
+
+  "missingaccountassociation_maintitle": {
+    "message": "Your PerfectPost account is not yet associated with your LinkedIn account",
+    "description": ""
+  },
+
+  "missingaccountassociation_description": {
+    "message": "You are connected to your PerfectPost account but it is not yet ready to be used on LinkedIn. To associate your LinkedIn account with your PerfectPost account, please click on the button below.",
+    "description": ""
+  },
+
+  "missingaccountassociation_assiciateaccount": {
+    "message": "Associate PerfectPost with LinkedIn",
+    "description": ""
+  },
+
+  "canvaimportmodal_title": {
+    "message": "Import a Canva design",
+    "description": "Title of the Canva import modal"
+  },
+  "canvaimportmodal_close": {
+    "message": "×",
+    "description": "Close button for Canva import modal"
+  },
+  "canvaimportmodal_loading": {
+    "message": "Loading…",
+    "description": "Loading indicator in Canva import modal"
+  },
+  "canvaimportmodal_error_loading": {
+    "message": "Error loading Canva designs.",
+    "description": "Error message when designs cannot be loaded"
+  },
+  "canvaimportmodal_empty": {
+    "message": "No Canva design found.",
+    "description": "Displayed when no Canva designs are found"
+  },
+  "canvaimportmodal_untitled": {
+    "message": "Untitled",
+    "description": "Fallback title for a Canva design without a title"
+  },
+  "canvaimportmodal_import": {
+    "message": "Import",
+    "description": "Button to import a Canva design"
+  },
+  "canvaimportmodal_prev": {
+    "message": "Previous",
+    "description": "Pagination previous button"
+  },
+  "canvaimportmodal_next": {
+    "message": "Next",
+    "description": "Pagination next button"
+  },
+  "canvaimportmodal_status_preparing": {
+    "message": "Preparing export…",
+    "description": "Status: preparing export"
+  },
+  "canvaimportmodal_log_preparing": {
+    "message": "Preparing Canva export…",
+    "description": "Log: preparing export"
+  },
+  "canvaimportmodal_log_export_started": {
+    "message": "Canva export started.",
+    "description": "Log: export started"
+  },
+  "canvaimportmodal_status_generating": {
+    "message": "Generating PDF…",
+    "description": "Status: generating PDF"
+  },
+  "canvaimportmodal_error_create_job": {
+    "message": "Error creating Canva export job",
+    "description": "Error: job creation failed"
+  },
+  "canvaimportmodal_error_preparing": {
+    "message": "Error preparing Canva export.",
+    "description": "Status: error preparing export"
+  },
+  "canvaimportmodal_log_error": {
+    "message": "Error: $1",
+    "description": "Log: error message",
+    "placeholders": {"1": {"content": "$1", "example": "Some error"}}
+  },
+  "canvaimportmodal_error_not_authenticated": {
+    "message": "You must connect your Canva account to use this feature.",
+    "description": "Erreur : non authentifié"
+  },
+  "canvaimportmodal_login": {
+    "message": "Link your Canva account to PerfectPost",
+    "description": "Bouton pour se connecter à Canva"
+  },
+  "canvaimportmodal_log_status_generating": {
+    "message": "Status: generating…",
+    "description": "Log: status generating"
+  },
+  "canvaimportmodal_error_polling": {
+    "message": "Error polling Canva job",
+    "description": "Status: error polling job"
+  },
+  "canvaimportmodal_error_pdf": {
+    "message": "Error generating Canva PDF",
+    "description": "Status: error generating PDF"
+  },
+  "canvaimportmodal_log_pdf_missing": {
+    "message": "Error: PDF not generated or URL missing.",
+    "description": "Log: PDF missing or URL missing"
+  },
+  "canvaimportmodal_status_downloading": {
+    "message": "Downloading PDF…",
+    "description": "Status: downloading PDF"
+  },
+  "canvaimportmodal_log_downloading": {
+    "message": "Downloading Canva PDF…",
+    "description": "Log: downloading PDF"
+  },
+  "canvaimportmodal_log_downloaded": {
+    "message": "PDF downloaded ($1 bytes)",
+    "description": "Log: PDF downloaded with size",
+    "placeholders": {"1": {"content": "$1", "example": "12345"}}
+  },
+  "canvaimportmodal_error_downloading": {
+    "message": "Error downloading Canva PDF",
+    "description": "Status: error downloading PDF"
+  },
+  "canvaimportmodal_status_injecting": {
+    "message": "Importing into post…",
+    "description": "Status: injecting PDF into LinkedIn post"
+  },
+  "canvaimportmodal_log_done": {
+    "message": "Import complete.",
+    "description": "Log: import done"
+  },
+  "canvaimportmodal_status_success": {
+    "message": "Success!",
+    "description": "Status: import success"
+  },
+  "canvaimportmodal_error_injecting": {
+    "message": "Error injecting PDF",
+    "description": "Status: error injecting PDF"
+  },
+  "popup_linkedin_label": {
+    "message": "LinkedIn:",
+    "description": "Label for LinkedIn status in popup"
+  },
+  "popup_perfectpost_label": {
+    "message": "PerfectPost:",
+    "description": "Label for PerfectPost status in popup"
+  },
+  "popup_email_label": {
+    "message": "Email",
+    "description": "Label for email field in popup"
+  },
+  "popup_password_label": {
+    "message": "Password",
+    "description": "Label for password field in popup"
+  },
+  "popup_login_button": {
+    "message": "Login",
+    "description": "Text for login button in popup"
+  },
+  "popup_logout_button": {
+    "message": "Logout",
+    "description": "Text for logout button in popup"
+  },
+  "popup_linkedin_unknown": {
+    "message": "unknown",
+    "description": "Text displayed when LinkedIn profile is unknown"
+  },
+  "badge_login_required_title": {
+    "message": "PerfectPost - Login required",
+    "description": "Icon title when user is not logged in"
+  },
+  "badge_status_unknown_title": {
+    "message": "PerfectPost - Unknown status",
+    "description": "Icon title when status error occurs"
+  },
+  "badge_default_title": {
+    "message": "PerfectPost",
+    "description": "Default icon title"
+  },
+  "popup_signup_text": {
+    "message": "Don't have an account yet?",
+    "description": "Text before the signup link"
+  },
+  "popup_signup_link": {
+    "message": "Create account",
+    "description": "Text for the signup link"
+  },
+  "popup_never": {
+    "message": "Never",
+    "description": "Text to indicate that an action never happened"
+  },
+  "popup_next": {
+    "message": "next",
+    "description": "Prefix to indicate the next occurrence"
+  },
+  "popup_now": {
+    "message": "now",
+    "description": "Indication that something is happening now"
+  },
+  "popup_today": {
+    "message": "today",
+    "description": "Indication for today"
+  },
+  "popup_tomorrow": {
+    "message": "tomorrow",
+    "description": "Indication for tomorrow"
+  },
+  "popup_at": {
+    "message": "at",
+    "description": "Preposition to indicate time"
+  },
+  "popup_error_generic": {
+    "message": "An error occurred",
+    "description": "Generic error message"
+  },
+  "popup_connection_info": {
+    "message": "Connection information",
+    "description": "Title for the connection information section"
+  },
+  "popup_perfectpost_account": {
+    "message": "Connected PerfectPost account:",
+    "description": "Label for the PerfectPost account with email parameter"
+  },
+  "popup_linkedin_profile": {
+    "message": "Detected LinkedIn profile",
+    "description": "Label for the LinkedIn profile"
+  },
+  "popup_linkedin_profile_label": {
+    "message": "Detected LinkedIn profile:",
+    "description": "Label for the LinkedIn profile (without parameter)"
+  },
+  "popup_missing_association": {
+    "message": "⚠️ Missing association: Your PerfectPost account is not linked to a LinkedIn profile",
+    "description": "Error message for missing association with emoji"
+  },
+  "popup_account_mismatch": {
+    "message": "⚠️ Account conflict: The detected LinkedIn profile does not match the connected PerfectPost account",
+    "description": "Error message for account conflict with emoji"
+  },
+  "popup_extension": {
+    "message": "Extension",
+    "description": "Title for the extension section"
+  },
+  "popup_version": {
+    "message": "Version: $1",
+    "description": "Label for the version with parameter"
+  },
+  "popup_connected": {
+    "message": "Connected",
+    "description": "Connected status"
+  },
+  "popup_disconnected": {
+    "message": "Disconnected",
+    "description": "Disconnected status"
+  },
+  "popup_active_session": {
+    "message": "Active session",
+    "description": "Active session status"
+  },
+  "popup_no_session": {
+    "message": "No session",
+    "description": "No session status"
+  },
+  "popup_accounts_associated": {
+    "message": "✅ Accounts linked",
+    "description": "Success message for linked accounts with emoji"
+  },
+  "popup_recent_activities": {
+    "message": "Recent activities",
+    "description": "Title for the recent activities section"
+  },
+  "popup_extension_ping": {
+    "message": "Extension ping: $1",
+    "description": "Label for extension ping with timestamp parameter"
+  },
+  "popup_profile_update": {
+    "message": "Profile update",
+    "description": "Label for profile update"
+  },
+  "popup_followers_update": {
+    "message": "Followers update",
+    "description": "Label for followers update"
+  },
+  "popup_posts_update": {
+    "message": "Posts update",
+    "description": "Label for posts update"
+  },
+  "leftpanel_title": {
+    "message": "Drafts",
+    "description": "Left panel title"
+  },
+
+  "customfeed_title": {
+    "message": "Custom Feed PerfectPost",
+    "description": "Custom feed section title"
+  },
+
+  "customfeed_add_button": {
+    "message": "Add to a custom feed",
+    "description": "Button text to add to a custom feed"
+  },
+
+  "customfeed_existing_lists": {
+    "message": "Present in:",
+    "description": "Title for existing feeds list"
+  },
+
+  "customfeed_remove_button": {
+    "message": "Remove from custom feed",
+    "description": "Button text to remove from custom feed"
+  },
+
+  "customfeed_loading": {
+    "message": "Loading...",
+    "description": "Loading indicator"
+  }
+}
